@@ -6,6 +6,6 @@ module.exports = {
   },
 
   getFilePath: (fileName, fileId) => {
-    return `/home/touch/Desktop/resumable-uploading-nodejs/server/uploads/file-${fileId}-${fileName}`;
+    return `F:/DROCK WEBERA/RUNNING/dtime/resumable-uploading-demo/server/uploads/file-${fileId}-${fileName}`;
   },
 };

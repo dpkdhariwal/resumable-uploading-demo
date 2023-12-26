@@ -3,6 +3,7 @@ const cors = require("cors");
 const utils = require("./utils")
 const fs = require('fs')
 const Busboy = require("busboy")
+const path = require('path');
 
 
 const app = express();
@@ -73,7 +74,7 @@ app.post('/upload', (req, res) => {
         if (!fileId) {
             req.pause();
         }
-
+ 
         const filePath = utils.getFilePath(fileInfo.filename, fileId);
 
         fs.stat(filePath, (err, fileDetails) => {
